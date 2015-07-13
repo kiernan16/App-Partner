@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Jelloween - Machinato ExtraLight.ttf">
+            <string>Machinato-ExtraLight</string>
+        </mutableArray>
+        <mutableArray key="Jelloween - Machinato.ttf">
+            <string>Machinato</string>
+            <string>Machinato</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginSectionViewController">
+            <connections>
+                <outlet property="passwordField" destination="tuM-fy-Ght" id="whw-vd-tpu"/>
+                <outlet property="usernameField" destination="hea-Q4-RmK" id="KCU-dv-gzr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_login.png" translatesAutoresizingMaskIntoConstraints="NO" id="CHf-1d-Fzz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDP-zC-6Xi">
+                    <rect key="frame" x="8" y="14" width="48" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="2CI-hK-scx"/>
+                        <constraint firstAttribute="height" constant="22" id="R3i-xF-E90"/>
+                    </constraints>
+                    <state key="normal" image="btn_back.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="J25-hm-NYq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrE-BR-NWn">
+                    <rect key="frame" x="128" y="12" width="64" height="26"/>
+                    <fontDescription key="fontDescription" name="Machinato-ExtraLight" family="Machinato" pointSize="22"/>
+                    <color key="textColor" red="0.96168154760000002" green="0.96168154760000002" blue="0.96168154760000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="line" clearsOnBeginEditing="YES" minimumFontSize="17" background="graphic_input.png" translatesAutoresizingMaskIntoConstraints="NO" id="tuM-fy-Ght">
+                    <rect key="frame" x="40" y="259" width="240" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sBS-f4-1It"/>
+                    </constraints>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="22"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz5-8o-GL2">
+                    <rect key="frame" x="40" y="403" width="241" height="115"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="115" id="aK3-2d-qgx"/>
+                    </constraints>
+                    <state key="normal" image="btn_login.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Login:" destination="-1" eventType="touchUpInside" id="d38-c0-PUg"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username" borderStyle="line" clearsOnBeginEditing="YES" minimumFontSize="17" background="graphic_input.png" translatesAutoresizingMaskIntoConstraints="NO" id="hea-Q4-RmK">
+                    <rect key="frame" x="40" y="194" width="240" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="j2g-0Q-Bq3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="22"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BrE-BR-NWn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="0Vu-sq-dgN"/>
+                <constraint firstAttribute="centerX" secondItem="dz5-8o-GL2" secondAttribute="centerX" id="24I-Pv-trF"/>
+                <constraint firstItem="TDP-zC-6Xi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="35u-Dj-IsV"/>
+                <constraint firstItem="TDP-zC-6Xi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="14" id="9B7-lr-b15"/>
+                <constraint firstAttribute="bottom" secondItem="CHf-1d-Fzz" secondAttribute="bottom" id="AtC-Eh-CNk"/>
+                <constraint firstAttribute="centerX" secondItem="hea-Q4-RmK" secondAttribute="centerX" id="Bwd-aH-RPR"/>
+                <constraint firstItem="hea-Q4-RmK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="F5Z-7f-BFy"/>
+                <constraint firstAttribute="trailing" secondItem="tuM-fy-Ght" secondAttribute="trailing" constant="40" id="LcR-wg-PaZ"/>
+                <constraint firstAttribute="centerX" secondItem="tuM-fy-Ght" secondAttribute="centerX" id="M6O-eu-6f9"/>
+                <constraint firstItem="tuM-fy-Ght" firstAttribute="top" secondItem="hea-Q4-RmK" secondAttribute="bottom" constant="15" id="PbD-vf-sN4"/>
+                <constraint firstItem="CHf-1d-Fzz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pgc-dC-1ke"/>
+                <constraint firstAttribute="centerX" secondItem="BrE-BR-NWn" secondAttribute="centerX" id="QUZ-7Y-vyJ"/>
+                <constraint firstAttribute="trailing" secondItem="CHf-1d-Fzz" secondAttribute="trailing" id="Yx5-Qw-4SP"/>
+                <constraint firstAttribute="centerY" secondItem="CHf-1d-Fzz" secondAttribute="centerY" id="bbI-vr-zBH"/>
+                <constraint firstAttribute="centerY" secondItem="tuM-fy-Ght" secondAttribute="centerY" id="e2G-86-mPe"/>
+                <constraint firstAttribute="centerX" secondItem="CHf-1d-Fzz" secondAttribute="centerX" id="j6c-gr-u9h"/>
+                <constraint firstItem="CHf-1d-Fzz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kkP-3P-TpN"/>
+                <constraint firstAttribute="bottom" secondItem="dz5-8o-GL2" secondAttribute="bottom" constant="50" id="m2C-Jb-e0O"/>
+                <constraint firstAttribute="trailing" secondItem="hea-Q4-RmK" secondAttribute="trailing" constant="40" id="n77-Qd-o4u"/>
+                <constraint firstItem="tuM-fy-Ght" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="oFN-DE-Xdf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="272" y="321"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_login.png" width="320" height="568"/>
+        <image name="btn_back.png" width="6" height="16"/>
+        <image name="btn_login.png" width="241" height="53"/>
+        <image name="graphic_input.png" width="253" height="42"/>
+    </resources>
+</document>
